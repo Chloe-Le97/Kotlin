@@ -46,10 +46,22 @@ package loops
 //    }
 //}
 
+//fun main(args: Array<String>) {
+//    var sum = 0L
+//    for (i in 100..100000L){
+//        sum += i
+//    }
+//    println(sum)
+//}
+
 fun main(args: Array<String>) {
-    var sum = 0L
-    for (i in 100..100000L){
-        sum += i
+    var arrayList = arrayListOf("one", "two", "three", "four")
+
+    for (item in arrayList) {
+        if(item.contains("e")){
+            for (char in item){
+                println(char)
+            }
+        }
     }
-    println(sum)
 }
